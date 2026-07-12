@@ -8,6 +8,9 @@ main { width: min(1120px, calc(100% - 48px)); margin: auto; }
 nav { display: flex; justify-content: space-between; align-items: center; height: 96px; border-bottom: 1px solid var(--line); }
 .brand { color: var(--ink); font-size: 1.45rem; font-weight: 800; letter-spacing: -0.08em; text-decoration: none; }
 .brand span { color: var(--orange); }
+.nav-actions { display: flex; align-items: center; gap: 20px; }
+.language-toggle { padding: 0; border: 0; color: var(--orange); background: transparent; cursor: pointer; font: 500 .8rem "DM Mono", monospace; }
+.language-toggle:hover { color: var(--ink); }
 .nav-link { color: var(--ink); font: 500 .8rem "DM Mono", monospace; text-decoration: none; }
 .hero { min-height: 570px; padding: 118px 0 72px; }
 .eyebrow { margin: 0 0 22px; color: var(--orange); font: 500 .72rem "DM Mono", monospace; letter-spacing: .1em; }
@@ -22,6 +25,17 @@ h1 em { font-family: "Noto Serif SC", serif; font-weight: 600; color: var(--oran
 .about { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; padding: 72px 0; border-top: 1px solid var(--line); }
 h2 { margin: 0; font-size: clamp(1.8rem, 3vw, 2.8rem); line-height: 1.25; letter-spacing: -.05em; }
 .about > p { margin: 28px 0 0; color: #5d5c58; font-size: .96rem; line-height: 2; }
+.research { padding: 72px 0; border-top: 1px solid var(--line); }
+.section-heading { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: end; margin-bottom: 42px; }
+.section-heading > p { max-width: 410px; margin: 0 0 3px; color: #5d5c58; font-size: .96rem; line-height: 2; }
+.research-grid { display: grid; grid-template-columns: repeat(2, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.research-card { min-height: 250px; padding: 25px 27px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); display: flex; flex-direction: column; }
+.card-number { color: var(--orange); font: .72rem "DM Mono", monospace; }
+.research-card h3, .publication-card h3 { margin: auto 0 8px; font-size: 1.5rem; line-height: 1.25; letter-spacing: -.05em; }
+.research-card p, .publication-card p { max-width: 480px; margin: 0; color: #5d5c58; font-size: .9rem; line-height: 1.8; }
+.status { display: inline-block; width: fit-content; margin-top: 19px; padding: 4px 7px; color: var(--orange); background: #fae6db; font: .67rem "DM Mono", monospace; }
+.publication-card { display: grid; grid-template-columns: 1fr 1fr auto; gap: 30px; align-items: end; min-height: 178px; padding: 27px; border: 1px solid var(--line); border-top: 0; }
+.publication-card h3 { margin: 11px 0 0; }
 .links { border-top: 1px solid var(--line); }
 .links a { display: grid; grid-template-columns: 80px 1fr auto; align-items: center; min-height: 104px; border-bottom: 1px solid var(--line); color: var(--ink); text-decoration: none; transition: .2s ease; }
 .links a:hover { padding-left: 12px; color: var(--orange); }
@@ -29,4 +43,4 @@ h2 { margin: 0; font-size: clamp(1.8rem, 3vw, 2.8rem); line-height: 1.25; letter
 .links strong { font-size: 1.35rem; letter-spacing: -.04em; }
 .links b { font-size: 1.3rem; font-weight: 400; }
 footer { width: min(1120px, calc(100% - 48px)); margin: 0 auto; padding: 36px 0; color: #97938a; font: .72rem "DM Mono", monospace; }
-@media (max-width: 640px) { main, footer { width: min(100% - 32px, 1120px); } nav { height: 76px; } .hero { min-height: 520px; padding-top: 88px; } .about { grid-template-columns: 1fr; gap: 6px; padding: 56px 0; } .about > p { margin-top: 12px; } .links a { grid-template-columns: 54px 1fr auto; min-height: 88px; } }
+@media (max-width: 640px) { main, footer { width: min(100% - 32px, 1120px); } nav { height: 76px; } .hero { min-height: 520px; padding-top: 88px; } .about, .section-heading { grid-template-columns: 1fr; gap: 6px; } .about { padding: 56px 0; } .about > p { margin-top: 12px; } .research { padding: 56px 0; } .section-heading { margin-bottom: 32px; } .section-heading > p { margin-top: 12px; } .research-grid { grid-template-columns: 1fr; } .research-card { min-height: 220px; } .publication-card { grid-template-columns: 1fr; gap: 18px; min-height: 0; } .publication-card .status { margin-top: 0; } .links a { grid-template-columns: 54px 1fr auto; min-height: 88px; } }

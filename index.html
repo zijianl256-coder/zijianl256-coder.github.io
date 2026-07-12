@@ -3,44 +3,129 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="zijianl256-coder 的个人主页" />
-    <title>zijianl256-coder | 个人主页</title>
+    <meta name="description" content="Tzuchien-Official 的个人主页" />
+    <title>Tzuchien-Official | Personal Website</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
-      <nav aria-label="主导航">
-        <a class="brand" href="#top">ZJ<span>.</span></a>
-        <a class="nav-link" href="https://github.com/zijianl256-coder" target="_blank" rel="noreferrer">GitHub ↗</a>
+      <nav aria-label="Primary navigation">
+        <a class="brand" href="#top">TZ<span>.</span></a>
+        <div class="nav-actions">
+          <button class="language-toggle" id="language-toggle" type="button" aria-label="Switch language">EN</button>
+          <a class="nav-link" href="https://github.com/zijianl256-coder" target="_blank" rel="noreferrer">GitHub ↗</a>
+        </div>
       </nav>
 
       <section class="hero" id="top">
-        <p class="eyebrow">HELLO, WORLD</p>
-        <h1>你好，我是<br /><em>zijianl256-coder。</em></h1>
-        <p class="intro">这是我的个人主页：记录学习、作品与正在探索的想法。</p>
+        <p class="eyebrow" data-i18n="hello">HELLO, WORLD</p>
+        <h1><span data-i18n="heroLine">你好，我是</span><br /><em>Tzuchien-Official.</em></h1>
+        <p class="intro" data-i18n="intro">这是我的个人主页：记录学习、作品与正在探索的想法。</p>
         <div class="actions">
-          <a class="button primary" href="https://github.com/zijianl256-coder" target="_blank" rel="noreferrer">访问我的 GitHub <span>→</span></a>
-          <a class="button secondary" href="#about">了解更多</a>
+          <a class="button primary" href="https://github.com/zijianl256-coder" target="_blank" rel="noreferrer"><span data-i18n="githubButton">访问我的 GitHub</span> <span>→</span></a>
+          <a class="button secondary" href="#about" data-i18n="learnMore">了解更多</a>
         </div>
       </section>
 
       <section class="about" id="about">
         <div>
           <p class="eyebrow">ABOUT</p>
-          <h2>持续学习，认真创造。</h2>
+          <h2 data-i18n="aboutTitle">持续学习，认真创造。</h2>
         </div>
-        <p>我会在这里逐步补充个人介绍、项目作品与联系方式。这个网站由 GitHub Pages 提供支持，代码也公开托管在 GitHub。</p>
+        <p data-i18n="aboutText">我会在这里逐步补充个人介绍、项目作品与联系方式。这个网站由 GitHub Pages 提供支持，代码也公开托管在 GitHub。</p>
       </section>
 
-      <section class="links" aria-label="个人链接">
+      <section class="research" id="research">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" data-i18n="researchKicker">RESEARCH &amp; WRITING</p>
+            <h2 data-i18n="researchTitle">研究、写作与学术活动。</h2>
+          </div>
+          <p data-i18n="researchIntro">在这里整理我正在学习、讨论和写作的内容。</p>
+        </div>
+
+        <div class="research-grid">
+          <article class="research-card">
+            <span class="card-number">01</span>
+            <h3 data-i18n="notesTitle">笔记</h3>
+            <p data-i18n="notesText">课程笔记、阅读笔记与研究随笔，持续更新。</p>
+            <span class="status" data-i18n="comingSoon">即将更新</span>
+          </article>
+          <article class="research-card">
+            <span class="card-number">02</span>
+            <h3 data-i18n="seminarTitle">讨论班</h3>
+            <p data-i18n="seminarText">参与或组织的讨论班主题、资料与报告记录。</p>
+            <span class="status" data-i18n="comingSoon">即将更新</span>
+          </article>
+          <article class="research-card">
+            <span class="card-number">03</span>
+            <h3 data-i18n="conferenceTitle">会议</h3>
+            <p data-i18n="conferenceText">学术会议、暑期学校与报告活动的时间线。</p>
+            <span class="status" data-i18n="comingSoon">即将更新</span>
+          </article>
+          <article class="research-card">
+            <span class="card-number">04</span>
+            <h3 data-i18n="preprintsTitle">预印本</h3>
+            <p data-i18n="preprintsText">正在撰写或已公开的预印本与工作论文。</p>
+            <span class="status" data-i18n="comingSoon">即将更新</span>
+          </article>
+        </div>
+
+        <article class="publication-card">
+          <div><span class="card-number">05</span><h3 data-i18n="publicationsTitle">论文与出版物</h3></div>
+          <p data-i18n="publicationsText">同行评审论文、书章与其他正式出版物将在此集中展示。</p>
+          <span class="status" data-i18n="comingSoon">即将更新</span>
+        </article>
+      </section>
+
+      <section class="links" aria-label="Personal links">
         <a href="https://github.com/zijianl256-coder" target="_blank" rel="noreferrer">
           <span>01</span><strong>GitHub</strong><b>↗</b>
         </a>
         <a href="mailto:your-email@example.com">
-          <span>02</span><strong>联系我</strong><b>↗</b>
+          <span>02</span><strong data-i18n="contact">联系我</strong><b>↗</b>
         </a>
       </section>
     </main>
-    <footer>© 2026 zijianl256-coder</footer>
+    <footer>© 2026 Tzuchien-Official</footer>
+
+    <script>
+      const text = {
+        zh: {
+          hello: 'HELLO, WORLD', heroLine: '你好，我是', intro: '这是我的个人主页：记录学习、作品与正在探索的想法。',
+          githubButton: '访问我的 GitHub', learnMore: '了解更多', aboutTitle: '持续学习，认真创造。',
+          aboutText: '我会在这里逐步补充个人介绍、项目作品与联系方式。这个网站由 GitHub Pages 提供支持，代码也公开托管在 GitHub。', contact: '联系我',
+          researchKicker: '研究与写作', researchTitle: '研究、写作与学术活动。', researchIntro: '在这里整理我正在学习、讨论和写作的内容。',
+          notesTitle: '笔记', notesText: '课程笔记、阅读笔记与研究随笔，持续更新。', seminarTitle: '讨论班', seminarText: '参与或组织的讨论班主题、资料与报告记录。',
+          conferenceTitle: '会议', conferenceText: '学术会议、暑期学校与报告活动的时间线。', preprintsTitle: '预印本', preprintsText: '正在撰写或已公开的预印本与工作论文。',
+          publicationsTitle: '论文与出版物', publicationsText: '同行评审论文、书章与其他正式出版物将在此集中展示。', comingSoon: '即将更新',
+          title: 'Tzuchien-Official | 个人主页', description: 'Tzuchien-Official 的个人主页'
+        },
+        en: {
+          hello: 'HELLO, WORLD', heroLine: 'Hello, I am', intro: 'A personal space for my learning, projects, and ideas in progress.',
+          githubButton: 'Visit my GitHub', learnMore: 'Learn more', aboutTitle: 'Always learning. Always creating.',
+          aboutText: 'I will gradually share more about myself, my projects, and ways to get in touch. This site is powered by GitHub Pages and its source is available on GitHub.', contact: 'Get in touch',
+          researchKicker: 'RESEARCH & WRITING', researchTitle: 'Research, writing, and academic life.', researchIntro: 'A record of what I am studying, discussing, and writing.',
+          notesTitle: 'Notes', notesText: 'Course notes, reading notes, and research reflections — updated over time.', seminarTitle: 'Seminars', seminarText: 'Topics, resources, and talk records from seminars I join or organize.',
+          conferenceTitle: 'Conferences', conferenceText: 'A timeline of conferences, summer schools, and academic talks.', preprintsTitle: 'Preprints', preprintsText: 'Preprints, working papers, and projects currently in progress.',
+          publicationsTitle: 'Papers & Publications', publicationsText: 'Peer-reviewed papers, book chapters, and other formal publications will appear here.', comingSoon: 'Coming soon',
+          title: 'Tzuchien-Official | Personal Website', description: 'The personal website of Tzuchien-Official'
+        }
+      };
+
+      const toggle = document.getElementById('language-toggle');
+      function setLanguage(language) {
+        const copy = text[language];
+        document.documentElement.lang = language === 'zh' ? 'zh-CN' : 'en';
+        document.querySelectorAll('[data-i18n]').forEach((element) => { element.textContent = copy[element.dataset.i18n]; });
+        document.title = copy.title;
+        document.querySelector('meta[name="description"]').content = copy.description;
+        toggle.textContent = language === 'zh' ? 'EN' : '中文';
+        toggle.setAttribute('aria-label', language === 'zh' ? 'Switch to English' : '切换至中文');
+        localStorage.setItem('preferred-language', language);
+      }
+      setLanguage(localStorage.getItem('preferred-language') || (navigator.language.startsWith('zh') ? 'zh' : 'en'));
+      toggle.addEventListener('click', () => setLanguage(document.documentElement.lang.startsWith('zh') ? 'en' : 'zh'));
+    </script>
   </body>
 </html>
