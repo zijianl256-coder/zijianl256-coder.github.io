@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@500;600;700&display=swap');
+
+:root { --ink: #1a1b1e; --paper: #f7f5ef; --orange: #e85d27; --line: #d9d5ca; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; color: var(--ink); background: var(--paper); font-family: Manrope, "Noto Sans SC", sans-serif; }
+main { width: min(1120px, calc(100% - 48px)); margin: auto; }
+nav { display: flex; justify-content: space-between; align-items: center; height: 96px; border-bottom: 1px solid var(--line); }
+.brand { color: var(--ink); font-size: 1.45rem; font-weight: 800; letter-spacing: -0.08em; text-decoration: none; }
+.brand span { color: var(--orange); }
+.nav-link { color: var(--ink); font: 500 .8rem "DM Mono", monospace; text-decoration: none; }
+.hero { min-height: 570px; padding: 118px 0 72px; }
+.eyebrow { margin: 0 0 22px; color: var(--orange); font: 500 .72rem "DM Mono", monospace; letter-spacing: .1em; }
+h1 { max-width: 860px; margin: 0; font-size: clamp(3rem, 7vw, 6.6rem); line-height: 1.06; letter-spacing: -.07em; font-weight: 800; }
+h1 em { font-family: "Noto Serif SC", serif; font-weight: 600; color: var(--orange); }
+.intro { max-width: 490px; margin: 36px 0 30px; color: #5d5c58; font-size: 1rem; line-height: 1.9; }
+.actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.button { display: inline-flex; align-items: center; gap: 24px; padding: 13px 17px; border: 1px solid var(--ink); color: var(--ink); font-size: .85rem; font-weight: 700; text-decoration: none; transition: .2s ease; }
+.button.primary { background: var(--ink); color: var(--paper); }
+.button.primary:hover { background: var(--orange); border-color: var(--orange); }
+.button.secondary:hover { color: var(--orange); border-color: var(--orange); }
+.about { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; padding: 72px 0; border-top: 1px solid var(--line); }
+h2 { margin: 0; font-size: clamp(1.8rem, 3vw, 2.8rem); line-height: 1.25; letter-spacing: -.05em; }
+.about > p { margin: 28px 0 0; color: #5d5c58; font-size: .96rem; line-height: 2; }
+.links { border-top: 1px solid var(--line); }
+.links a { display: grid; grid-template-columns: 80px 1fr auto; align-items: center; min-height: 104px; border-bottom: 1px solid var(--line); color: var(--ink); text-decoration: none; transition: .2s ease; }
+.links a:hover { padding-left: 12px; color: var(--orange); }
+.links span { color: #97938a; font: .72rem "DM Mono", monospace; }
+.links strong { font-size: 1.35rem; letter-spacing: -.04em; }
+.links b { font-size: 1.3rem; font-weight: 400; }
+footer { width: min(1120px, calc(100% - 48px)); margin: 0 auto; padding: 36px 0; color: #97938a; font: .72rem "DM Mono", monospace; }
+@media (max-width: 640px) { main, footer { width: min(100% - 32px, 1120px); } nav { height: 76px; } .hero { min-height: 520px; padding-top: 88px; } .about { grid-template-columns: 1fr; gap: 6px; padding: 56px 0; } .about > p { margin-top: 12px; } .links a { grid-template-columns: 54px 1fr auto; min-height: 88px; } }
