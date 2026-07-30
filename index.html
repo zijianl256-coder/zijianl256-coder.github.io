@@ -3,125 +3,109 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Tzuchien-Official 的个人主页" />
-    <title>Tzuchien-Official | Personal Website</title>
+    <meta name="description" content="Tzuchien-Official 的个人研究主页" />
+    <title>Tzuchien-Official | Research Cosmos</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="starfield" aria-hidden="true"></div>
     <main>
       <nav aria-label="Primary navigation">
         <a class="brand" href="#top">TZ<span>.</span></a>
+        <div class="nav-center">
+          <a href="#archive" data-i18n="navArchive">研究档案</a>
+          <a href="#about" data-i18n="navAbout">关于我</a>
+        </div>
         <div class="nav-actions">
           <button class="language-toggle" id="language-toggle" type="button" aria-label="Switch language">EN</button>
-          <a class="nav-link" href="https://github.com/zijianl256-coder" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a class="github-link" href="https://github.com/zijianl256-coder" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
         </div>
       </nav>
 
       <section class="hero" id="top">
-        <p class="eyebrow" data-i18n="hello">HELLO, WORLD</p>
-        <h1><span data-i18n="heroLine">你好，我是</span><br /><em>Tzuchien-Official.</em></h1>
-        <p class="intro" data-i18n="intro">这是我的个人主页：记录学习、作品与正在探索的想法。</p>
-        <div class="actions">
-          <a class="button primary" href="https://github.com/zijianl256-coder" target="_blank" rel="noreferrer"><span data-i18n="githubButton">访问我的 GitHub</span> <span>→</span></a>
-          <a class="button secondary" href="#about" data-i18n="learnMore">了解更多</a>
+        <div class="hero-copy">
+          <p class="kicker"><span></span><span data-i18n="kicker">TZUCHIEN-OFFICIAL · RESEARCH COSMOS</span></p>
+          <h1><span data-i18n="heroLead">在思想与星辰之间，</span><strong>Tzuchien.</strong></h1>
+          <p class="hero-intro" data-i18n="heroIntro">这里记录我的学习轨迹、研究笔记与学术活动；每一份材料，都是一枚正在被命名的星体。</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#archive"><span data-i18n="explore">探索研究星图</span><b>↓</b></a>
+            <a class="button secondary" href="https://github.com/zijianl256-coder" target="_blank" rel="noreferrer"><span data-i18n="githubButton">访问 GitHub</span><b>↗</b></a>
+          </div>
+        </div>
+        <div class="orbital-stage" aria-hidden="true">
+          <div class="black-hole">
+            <div class="lensing"></div><div class="accretion-ring ring-back"></div>
+            <div class="event-horizon"></div><div class="photon-ring"></div>
+            <div class="accretion-ring ring-front"></div><div class="relativistic-jet"></div>
+          </div>
+          <p>01 / PERSONAL ARCHIVE</p>
         </div>
       </section>
 
       <section class="about" id="about">
-        <div>
-          <p class="eyebrow">ABOUT</p>
-          <h2 data-i18n="aboutTitle">持续学习，认真创造。</h2>
-        </div>
-        <p data-i18n="aboutText">我会在这里逐步补充个人介绍、项目作品与联系方式。这个网站由 GitHub Pages 提供支持，代码也公开托管在 GitHub。</p>
+        <p class="section-id">01 — MISSION</p>
+        <div><p class="kicker"><span></span><span data-i18n="aboutKicker">ABOUT THIS SPACE</span></p><h2 data-i18n="aboutTitle">把学习、写作与相遇，收进同一片星空。</h2></div>
+        <p class="about-text" data-i18n="aboutText">这是 Tzuchien-Official 的个人研究档案。这里将持续整理笔记、讨论班、会议、预印本与出版物，并为每一段探索留下可回溯的轨迹。</p>
       </section>
 
-      <section class="research" id="research">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow" data-i18n="researchKicker">RESEARCH &amp; WRITING</p>
-            <h2 data-i18n="researchTitle">研究、写作与学术活动。</h2>
-          </div>
-          <p data-i18n="researchIntro">在这里整理我正在学习、讨论和写作的内容。</p>
+      <section class="archive" id="archive">
+        <div class="archive-heading"><p class="section-id">02 — ARCHIVE</p><div><p class="kicker"><span></span><span data-i18n="archiveKicker">RESEARCH CONSTELLATION</span></p><h2 data-i18n="archiveTitle">选择一颗星，进入一段研究。</h2></div><p data-i18n="archiveIntro">五个入口对应不同的学术轨道；点击后可浏览和持续补充你的资料。</p></div>
+        <div class="galaxy-grid">
+          <a class="galaxy-card notes" href="notes/"><span class="orb-code">ORBIT / 01</span><div class="orb-icon">✦</div><h3 data-i18n="notesTitle">笔记</h3><p data-i18n="notesText">课程、阅读与研究过程中的记录。</p><span class="card-arrow">↗</span></a>
+          <a class="galaxy-card seminars" href="seminars/"><span class="orb-code">ORBIT / 02</span><div class="orb-icon">◌</div><h3 data-i18n="seminarsTitle">讨论班</h3><p data-i18n="seminarsText">主题、资料与报告的相遇之地。</p><span class="card-arrow">↗</span></a>
+          <a class="galaxy-card conferences" href="conferences/"><span class="orb-code">ORBIT / 03</span><div class="orb-icon">✧</div><h3 data-i18n="conferencesTitle">会议</h3><p data-i18n="conferencesText">会议、暑期学校与学术报告的时间线。</p><span class="card-arrow">↗</span></a>
+          <a class="galaxy-card preprints" href="preprints/"><span class="orb-code">ORBIT / 04</span><div class="orb-icon">✺</div><h3 data-i18n="preprintsTitle">预印本</h3><p data-i18n="preprintsText">正在生长的工作论文与公开预印本。</p><span class="card-arrow">↗</span></a>
+          <a class="galaxy-card publications" href="publications/"><span class="orb-code">ORBIT / 05</span><div class="orb-icon">☄</div><div><h3 data-i18n="publicationsTitle">论文与出版物</h3><p data-i18n="publicationsText">同行评审论文、书章与正式出版物。</p></div><span class="card-arrow">↗</span></a>
         </div>
-
-        <div class="research-grid">
-          <article class="research-card">
-            <span class="card-number">01</span>
-            <h3 data-i18n="notesTitle">笔记</h3>
-            <p data-i18n="notesText">课程笔记、阅读笔记与研究随笔，持续更新。</p>
-            <span class="status" data-i18n="comingSoon">即将更新</span>
-          </article>
-          <article class="research-card">
-            <span class="card-number">02</span>
-            <h3 data-i18n="seminarTitle">讨论班</h3>
-            <p data-i18n="seminarText">参与或组织的讨论班主题、资料与报告记录。</p>
-            <span class="status" data-i18n="comingSoon">即将更新</span>
-          </article>
-          <article class="research-card">
-            <span class="card-number">03</span>
-            <h3 data-i18n="conferenceTitle">会议</h3>
-            <p data-i18n="conferenceText">学术会议、暑期学校与报告活动的时间线。</p>
-            <span class="status" data-i18n="comingSoon">即将更新</span>
-          </article>
-          <article class="research-card">
-            <span class="card-number">04</span>
-            <h3 data-i18n="preprintsTitle">预印本</h3>
-            <p data-i18n="preprintsText">正在撰写或已公开的预印本与工作论文。</p>
-            <span class="status" data-i18n="comingSoon">即将更新</span>
-          </article>
-        </div>
-
-        <article class="publication-card">
-          <div><span class="card-number">05</span><h3 data-i18n="publicationsTitle">论文与出版物</h3></div>
-          <p data-i18n="publicationsText">同行评审论文、书章与其他正式出版物将在此集中展示。</p>
-          <span class="status" data-i18n="comingSoon">即将更新</span>
-        </article>
       </section>
 
-      <section class="links" aria-label="Personal links">
-        <a href="https://github.com/zijianl256-coder" target="_blank" rel="noreferrer">
-          <span>01</span><strong>GitHub</strong><b>↗</b>
-        </a>
-        <a href="mailto:your-email@example.com">
-          <span>02</span><strong data-i18n="contact">联系我</strong><b>↗</b>
-        </a>
-      </section>
+      <section class="signal"><p class="section-id">03 — SIGNAL</p><p data-i18n="signalText">新的材料会持续抵达这片星图。</p><a href="mailto:your-email@example.com" data-i18n="contact">联系我 ↗</a></section>
     </main>
-    <footer>© 2026 Tzuchien-Official</footer>
+    <footer><span>© 2026 Tzuchien-Official</span><span>MADE FOR SLOW THINKING</span></footer>
 
     <script>
       const text = {
         zh: {
-          hello: 'HELLO, WORLD', heroLine: '你好，我是', intro: '这是我的个人主页：记录学习、作品与正在探索的想法。',
-          githubButton: '访问我的 GitHub', learnMore: '了解更多', aboutTitle: '持续学习，认真创造。',
-          aboutText: '我会在这里逐步补充个人介绍、项目作品与联系方式。这个网站由 GitHub Pages 提供支持，代码也公开托管在 GitHub。', contact: '联系我',
-          researchKicker: '研究与写作', researchTitle: '研究、写作与学术活动。', researchIntro: '在这里整理我正在学习、讨论和写作的内容。',
-          notesTitle: '笔记', notesText: '课程笔记、阅读笔记与研究随笔，持续更新。', seminarTitle: '讨论班', seminarText: '参与或组织的讨论班主题、资料与报告记录。',
-          conferenceTitle: '会议', conferenceText: '学术会议、暑期学校与报告活动的时间线。', preprintsTitle: '预印本', preprintsText: '正在撰写或已公开的预印本与工作论文。',
-          publicationsTitle: '论文与出版物', publicationsText: '同行评审论文、书章与其他正式出版物将在此集中展示。', comingSoon: '即将更新',
-          title: 'Tzuchien-Official | 个人主页', description: 'Tzuchien-Official 的个人主页'
+          navArchive: '研究档案', navAbout: '关于我', kicker: 'TZUCHIEN-OFFICIAL · 个人研究星图', heroLead: '在思想与星辰之间，',
+          heroIntro: '这里记录我的学习轨迹、研究笔记与学术活动；每一份材料，都是一枚正在被命名的星体。', explore: '探索研究星图', githubButton: '访问 GitHub',
+          aboutKicker: '关于这片空间', aboutTitle: '把学习、写作与相遇，收进同一片星空。', aboutText: '这是 Tzuchien-Official 的个人研究档案。这里将持续整理笔记、讨论班、会议、预印本与出版物，并为每一段探索留下可回溯的轨迹。',
+          archiveKicker: '研究星座', archiveTitle: '选择一颗星，进入一段研究。', archiveIntro: '五个入口对应不同的学术轨道；点击后可浏览和持续补充你的资料。',
+          notesTitle: '笔记', notesText: '课程、阅读与研究过程中的记录。', seminarsTitle: '讨论班', seminarsText: '主题、资料与报告的相遇之地。', conferencesTitle: '会议', conferencesText: '会议、暑期学校与学术报告的时间线。', preprintsTitle: '预印本', preprintsText: '正在生长的工作论文与公开预印本。', publicationsTitle: '论文与出版物', publicationsText: '同行评审论文、书章与正式出版物。',
+          signalText: '新的材料会持续抵达这片星图。', contact: '联系我 ↗', title: 'Tzuchien-Official | 个人研究星图', description: 'Tzuchien-Official 的个人研究主页'
         },
         en: {
-          hello: 'HELLO, WORLD', heroLine: 'Hello, I am', intro: 'A personal space for my learning, projects, and ideas in progress.',
-          githubButton: 'Visit my GitHub', learnMore: 'Learn more', aboutTitle: 'Always learning. Always creating.',
-          aboutText: 'I will gradually share more about myself, my projects, and ways to get in touch. This site is powered by GitHub Pages and its source is available on GitHub.', contact: 'Get in touch',
-          researchKicker: 'RESEARCH & WRITING', researchTitle: 'Research, writing, and academic life.', researchIntro: 'A record of what I am studying, discussing, and writing.',
-          notesTitle: 'Notes', notesText: 'Course notes, reading notes, and research reflections — updated over time.', seminarTitle: 'Seminars', seminarText: 'Topics, resources, and talk records from seminars I join or organize.',
-          conferenceTitle: 'Conferences', conferenceText: 'A timeline of conferences, summer schools, and academic talks.', preprintsTitle: 'Preprints', preprintsText: 'Preprints, working papers, and projects currently in progress.',
-          publicationsTitle: 'Papers & Publications', publicationsText: 'Peer-reviewed papers, book chapters, and other formal publications will appear here.', comingSoon: 'Coming soon',
-          title: 'Tzuchien-Official | Personal Website', description: 'The personal website of Tzuchien-Official'
+          navArchive: 'Archive', navAbout: 'About', kicker: 'TZUCHIEN-OFFICIAL · RESEARCH COSMOS', heroLead: 'Between ideas and stars,',
+          heroIntro: 'A living record of my learning, research notes, and academic life. Each item is a celestial body waiting to be named.', explore: 'Explore the archive', githubButton: 'Visit GitHub',
+          aboutKicker: 'ABOUT THIS SPACE', aboutTitle: 'Gathering learning, writing, and encounters under one sky.', aboutText: 'This is the personal research archive of Tzuchien-Official. It brings together notes, seminars, conferences, preprints, and publications, leaving a trace for every exploration.',
+          archiveKicker: 'RESEARCH CONSTELLATION', archiveTitle: 'Choose a star. Enter a line of inquiry.', archiveIntro: 'Each entry follows a different academic orbit. Open one to explore and keep adding your materials.',
+          notesTitle: 'Notes', notesText: 'Records from courses, reading, and research in progress.', seminarsTitle: 'Seminars', seminarsText: 'A meeting place for topics, materials, and talks.', conferencesTitle: 'Conferences', conferencesText: 'A timeline of conferences, schools, and academic talks.', preprintsTitle: 'Preprints', preprintsText: 'Working papers and public preprints still taking shape.', publicationsTitle: 'Papers & Publications', publicationsText: 'Peer-reviewed papers, chapters, and formal publications.',
+          signalText: 'New material will keep arriving in this constellation.', contact: 'Get in touch ↗', title: 'Tzuchien-Official | Research Cosmos', description: 'The personal research website of Tzuchien-Official'
         }
       };
+      const starfield = document.querySelector('.starfield');
+      let seed = 90917;
+      const random = () => (seed = (seed * 48271) % 2147483647) / 2147483647;
+      const bell = () => Math.sqrt(-2 * Math.log(Math.max(random(), .0001))) * Math.cos(2 * Math.PI * random());
+      const clusters = [{ x: 9, y: 70, sx: 24, sy: 14 }, { x: 63, y: 18, sx: 27, sy: 19 }, { x: 84, y: 77, sx: 18, sy: 15 }];
+      const starColors = ['#ffffff', '#dce9ff', '#9bcfff', '#d7b9ff', '#ffe1bb'];
+      for (let index = 0; index < 190; index += 1) {
+        const star = document.createElement('i');
+        const cluster = index < 125 ? clusters[index % clusters.length] : null;
+        const x = cluster ? Math.max(0, Math.min(100, cluster.x + bell() * cluster.sx)) : random() * 100;
+        const y = cluster ? Math.max(0, Math.min(100, cluster.y + bell() * cluster.sy)) : random() * 100;
+        const size = random() < .72 ? .55 + random() * 1.1 : 1.5 + random() * 2.5;
+        const color = starColors[Math.floor(Math.pow(random(), 1.7) * starColors.length)];
+        star.style.cssText = `left:${x}%;top:${y}%;width:${size}px;height:${size}px;--star:${color};--opacity:${.26 + random() * .72};--delay:-${random() * 8}s;`;
+        if (size > 2.6) star.className = 'bright-star';
+        starfield.append(star);
+      }
 
       const toggle = document.getElementById('language-toggle');
       function setLanguage(language) {
-        const copy = text[language];
-        document.documentElement.lang = language === 'zh' ? 'zh-CN' : 'en';
+        const copy = text[language]; document.documentElement.lang = language === 'zh' ? 'zh-CN' : 'en';
         document.querySelectorAll('[data-i18n]').forEach((element) => { element.textContent = copy[element.dataset.i18n]; });
-        document.title = copy.title;
-        document.querySelector('meta[name="description"]').content = copy.description;
-        toggle.textContent = language === 'zh' ? 'EN' : '中文';
-        toggle.setAttribute('aria-label', language === 'zh' ? 'Switch to English' : '切换至中文');
+        document.title = copy.title; document.querySelector('meta[name="description"]').content = copy.description;
+        toggle.textContent = language === 'zh' ? 'EN' : '中文'; toggle.setAttribute('aria-label', language === 'zh' ? 'Switch to English' : '切换至中文');
         localStorage.setItem('preferred-language', language);
       }
       setLanguage(localStorage.getItem('preferred-language') || (navigator.language.startsWith('zh') ? 'zh' : 'en'));
